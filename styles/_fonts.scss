@@ -1,45 +1,47 @@
 // ------------------------------------------------------------------
 // Fonts
 // ------------------------------------------------------------------
-// 1. PT Sans .......... Text font
-// 2. PT Sans Narrow ... Headings font
-// 3. PT Mono .......... Code font
-// ------------------------------------------------------------------
 
-// PT Sans
+$fontsize:34px;
+$lineheight:45px;
+$headersize:44px;
+$headerlineheight:4/3*$lineheight;
 
+// Open Sans
 @font-face {
-	font-family:PT Sans;
-	src:url(../fonts/pt-sans-regular.woff) format('woff');
+	font-family:'Open Sans';
+	src:url(../fonts/OpenSans.woff) format('woff');
 	}
 @font-face {
 	font-weight:bold;
-	font-family:PT Sans;
-	src:url(../fonts/pt-sans-bold.woff) format('woff');
+	font-family:'Open Sans';
+	src:url(../fonts/OpenSans.Bold.woff) format('woff');
 	}
 @font-face {
 	font-style:italic;
-	font-family:PT Sans;
-	src:url(../fonts/pt-sans-italic.woff) format('woff');
+	font-family:'Open Sans';
+	src:url(../fonts/OpenSans.Italic.woff) format('woff');
 	}
 @font-face {
 	font-style:italic;
 	font-weight:bold;
-	font-family:PT Sans;
-	src:url(../fonts/pt-sans-bold-italic.woff) format('woff');
+	font-family:'Open Sans';
+	src:url(../fonts/OpenSans.Bold.Italic.woff) format('woff');
+	}
+@font-face {
+	font-weight:300;
+	font-family:'Open Sans';
+	src:url(../fonts/OpenSans.Light.woff) format('woff');
 	}
 
-// PT Narrow
-
+// Source Code Pro
 @font-face {
-	font-family:PT Sans Narrow;
+	font-family:'Source Code Pro';
+	src:url(../fonts/SourceCodePro.woff) format('woff');
+	}
+@font-face {
 	font-weight:bold;
-	src:url(../fonts/pt-sans-narrow-bold.woff) format('woff');
+	font-family:'Source Code Pro';
+	src:url(../fonts/SourceCodePro.Bold.woff) format('woff');
 	}
 
-// PT Mono
-
-@font-face {
-	font-family:PT Mono;
-	src:url(../fonts/pt-mono-regular.woff) format('woff');
-	}

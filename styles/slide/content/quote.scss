@@ -3,24 +3,20 @@
 // ------------------------------------------------------------------
 
 blockquote {
-
 	font-style:italic;
+	margin-left: $left;
 
-	&:before {
-		position:absolute;
-		margin:-0.15em 0 0 -0.43em;
-		color:#CCC;
-		line-height:1;
-		font-size:8em;
-		content:'\201C';
+	p {
+		margin-left: 0;
 		}
 
 	// Author
-
-	& + figcaption {
+	cite {
 		margin:-1em 0 1em;
 		font-style:italic;
-		font-weight:bold;
+			&:before {
+				content: "—";
+			}
 		}
 
 	}

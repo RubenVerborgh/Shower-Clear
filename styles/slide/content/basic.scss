@@ -3,12 +3,18 @@
 // ------------------------------------------------------------------
 
 h2 {
-	margin-bottom:34px;
+	$headeroffset:4px;
+	margin:(($headersize - $headerlineheight) / 2 + $headeroffset)
+		     0
+         (($lineheight - $headersize) / 2 - $headeroffset + $lineheight);
 	color:$grey;
-	font:bold 50px/1 PT Sans Narrow, sans-serif;
+	font-size: $headersize;
+	font-weight: bold;
+	line-height: $headerlineheight;
+	min-height: 2 * $headerlineheight;
 	}
 p {
-	margin-bottom:1em;
+	margin: 0 0 $lineheight $left;
 	&.note {
 		color:lighten($grey, 25%);
 		}

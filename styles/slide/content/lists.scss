@@ -3,44 +3,20 @@
 // ------------------------------------------------------------------
 
 ol, ul {
-
-	margin-bottom:1em;
-	counter-reset:list;
+	margin:0 0 0 $left;
 
 	li {
-
+    font-weight:bold;
+    min-height:2 * $lineheight;
 		page-break-inside:avoid;
-		text-indent:-2em;
-
-		// Marker
-
-		&:before {
-			display:inline-block;
-			width:2em;
-			color:lighten($grey, 25%);
-			text-align:right;
-			}
-
 		}
 
 	ol, ul {
-		margin-bottom:0;
-		margin-left:2em;
+		margin:3px 0 -3px $left;
+		li {
+			font-size: 5/6*$fontsize;
+			font-weight: normal;
+			min-height: auto;
+      }
 		}
-
-	}
-
-// Markers
-
-ul > li:before {
-	padding-right:0.5em;
-	content:'•';
-	}
-ul > li:lang(ru):before {
-	content:'—';
-	}
-ol > li:before {
-	padding-right:0.4em;
-	counter-increment:list;
-	content:counter(list)'.';
 	}
