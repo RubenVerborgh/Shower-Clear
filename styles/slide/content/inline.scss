@@ -4,10 +4,11 @@
 
 a {
 	@include underline(currentColor, 0.09);
-	color:$blue;
+	color:$color1;
 	}
 b, strong {
 	font-weight:bold;
+	color: $color2;
 	}
 i, em, dfn {
 	font-style:italic;
@@ -23,7 +24,7 @@ kbd, code, samp {
 	font-family: "Source Code Pro", monospace;
 	}
 mark {
-	background:$yellow;
+	background:$color3;
 	}
 sub, sup {
 	position: relative;
