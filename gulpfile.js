@@ -15,7 +15,7 @@ var pkg = require('./package.json');
 var banner = `/**
  * ${ pkg.description }
  * ${ pkg.name } v${ pkg.version }, ${ pkg.homepage }
- * @copyright 2010–${ new Date().getFullYear() } ${ pkg.author.name }, ${ pkg.author.url }
+ * @copyright 2010–${ new Date().getFullYear() }
  * @license ${ pkg.license }
  */
 `;
