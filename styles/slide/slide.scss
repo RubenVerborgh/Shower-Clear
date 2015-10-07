@@ -35,6 +35,7 @@ $right: $left;
 	// Modifiers
 
 	@import
+		'modifiers/title',
 		'modifiers/grid',
 		'modifiers/black',
 		'modifiers/white';
