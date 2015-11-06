@@ -4,9 +4,9 @@
 
 &.title {
 	h2 {
-		margin:4*$lineheight 0 $lineheight 0;
+		margin:(2*$headerlineheight - $headeroffset + 2*$lineheight) 0 ($lineheight + $fontsize);
 		font-size:2*$fontsize;
-		line-height:5/3*$lineheight;
+		line-height:2*$lineheight;
 	}
 	p {
 		margin:0;

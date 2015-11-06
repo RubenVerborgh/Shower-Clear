@@ -3,7 +3,7 @@
 // ------------------------------------------------------------------
 
 pre {
-	margin:0 0 $lineheight;
+	margin:-4px 0 ($lineheight + 4px);
 	padding:8px 0 0;
 	white-space:normal;
 	tab-size:2;

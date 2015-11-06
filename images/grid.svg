@@ -13,16 +13,18 @@
 	<use xlink:href="#vertical"   x= "60"/>
 	<use xlink:href="#vertical"   x="964"/>
 
-	<use xlink:href="#horizontal" y= "74"/>
-	<use xlink:href="#horizontal" y="134"/>
-	<use xlink:href="#horizontal" y="179"/>
-	<use xlink:href="#horizontal" y="224"/>
-	<use xlink:href="#horizontal" y="269"/>
-	<use xlink:href="#horizontal" y="314"/>
-	<use xlink:href="#horizontal" y="359"/>
-	<use xlink:href="#horizontal" y="404"/>
-	<use xlink:href="#horizontal" y="449"/>
-	<use xlink:href="#horizontal" y="494"/>
-	<use xlink:href="#horizontal" y="539"/>
-	<use xlink:href="#horizontal" y="584"/>
+	<use xlink:href="#horizontal" y= "72"/>
+	<use xlink:href="#horizontal" y="126"/>
+	<use xlink:href="#horizontal" y="168"/>
+	<use xlink:href="#horizontal" y="210"/>
+	<use xlink:href="#horizontal" y="252"/>
+	<use xlink:href="#horizontal" y="294"/>
+	<use xlink:href="#horizontal" y="336"/>
+	<use xlink:href="#horizontal" y="378"/>
+	<use xlink:href="#horizontal" y="420"/>
+	<use xlink:href="#horizontal" y="462"/>
+	<use xlink:href="#horizontal" y="504"/>
+	<use xlink:href="#horizontal" y="546"/>
+	<use xlink:href="#horizontal" y="588"/>
+	<use xlink:href="#horizontal" y="630"/>
 </svg>

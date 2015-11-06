@@ -2,11 +2,12 @@
 // Basic
 // ------------------------------------------------------------------
 
+$headeroffset:-4px;
 h2 {
-	$headeroffset:4px;
-	margin:(($headersize - $headerlineheight) / 2 + $headeroffset)
-		     0
-         (($lineheight - $headersize) / 2 - $headeroffset + $lineheight);
+	margin: $headeroffset 0 $lineheight;
+	padding:(($headersize - $headerlineheight) / 2)
+	        0
+	        (($lineheight - $headersize) / 2);
 	color:$grey;
 	font-size: $headersize;
 	font-weight: bold;
