@@ -2,8 +2,7 @@
 // Cover
 // ------------------------------------------------------------------
 
-.cover {
-
+img.cover, figure.cover img {
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -11,21 +10,21 @@
 	transform:translate(-50%, -50%);
 	max-width:100%;
 	max-height:100%;
+}
 
-	// Fitting
+// Fitting
+img.cover.width, img.cover.w, figure.cover.width img, figure.cover.w img {
+	width:100%;
+	max-height:none;
+}
+img.cover.height, img.cover.h, figure.cover.height img, figure.cover.h img {
+	height:100%;
+	max-width:none;
+}
 
-	&.width, &.w {
-		width:100%;
-		max-height:none;
-		}
-	&.height, &.h {
-		height:100%;
-		max-width:none;
-		}
-
+figure.cover {
 	// Watermark
-
-	& + figcaption {
+	& figcaption {
 		position:absolute;
 		bottom:0px;
 		right:0px;
@@ -40,7 +39,5 @@
 		a {
 			color:currentcolor;
 			}
-
 		}
-
 	}
