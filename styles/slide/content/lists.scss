@@ -6,16 +6,16 @@ ol, ul {
 	margin:0 0 0 $left;
 
 	li {
-    font-weight:bold;
-    min-height:2 * $lineheight;
+		font-weight:bold;
+		margin-bottom: $lineheight;
 		page-break-inside:avoid;
-		}
+	}
 
 	ol, ul {
 		li {
-			font-size: 7/8*$fontsize;
-			font-weight: normal;
-			min-height: auto;
-      }
+		font-size: 7/8*$fontsize;
+		font-weight: normal;
+		margin-bottom: 0;
 		}
 	}
+}
