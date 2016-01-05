@@ -11,11 +11,33 @@ ol, ul {
 		page-break-inside:avoid;
 	}
 
+	// Nested lists
 	ol, ul {
 		li {
 		font-size: 7/8*$fontsize;
 		font-weight: normal;
 		margin-bottom: 0;
 		}
+	}
+}
+
+// List item numbers
+ol {
+	counter-reset:list;
+
+	> li:before {
+		counter-increment:list;
+		content:counter(list);
+		position:absolute;
+		width:3em;
+		margin-left:-3em;
+		color:$grey;
+		text-align:right;
+		padding-right:0.5em;
+	}
+
+	// Nested lists
+	ol > li:before {
+		content:counter(list, lower-alpha);
 	}
 }
