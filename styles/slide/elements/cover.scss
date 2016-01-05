@@ -2,7 +2,7 @@
 // Cover
 // ------------------------------------------------------------------
 
-img.cover, figure.cover img {
+.cover:not(figure), figure.cover > :first-child {
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -13,17 +13,19 @@ img.cover, figure.cover img {
 }
 
 // Fitting
-img.cover.width, img.cover.w, figure.cover.width img, figure.cover.w img {
+.cover:not(figure).width, .cover:not(figure).w,
+figure.cover.width > :first-child, figure.cover.w > :first-child {
 	width:100%;
 	max-height:none;
 }
-img.cover.height, img.cover.h, figure.cover.height img, figure.cover.h img {
+.cover:not(figure).height, .cover:not(figure).h,
+figure.cover.height > :first-child, figure.cover.h > :first-child {
 	height:100%;
 	max-width:none;
 }
 
 figure.cover {
-	// Watermark
+	// Caption
 	& figcaption {
 		position:absolute;
 		bottom:0px;
