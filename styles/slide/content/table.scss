@@ -9,7 +9,7 @@ table {
 
 	tr:not(:last-of-type) {
 		> * {
-			@include underline(rgba($grey, 0.5), 0.055);
+			@include underline($grey, 0.055);
 			}
 		}
 	th {
@@ -22,7 +22,7 @@ table {
 	&.striped {
 		tr {
 			&:nth-child(even) {
-				background:rgba($grey, 0.15);
+				background:$grey;
 				}
 			> * {
 				background-image:none;

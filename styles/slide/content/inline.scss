@@ -18,7 +18,7 @@ code, kbd, mark, samp {
 	border-radius:0.4em;
 	}
 kbd, code, samp {
-	background:rgba($grey, 0.15);
+	background:$grey;
 	color:#000;
 	line-height:1;
 	font-family: "Source Code Pro", monospace;

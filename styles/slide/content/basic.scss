@@ -18,6 +18,6 @@ h2 {
 p {
 	margin: 0 0 $lineheight $left;
 	&.note {
-		color:lighten($grey, 25%);
+		color:$grey;
 		}
 	}
