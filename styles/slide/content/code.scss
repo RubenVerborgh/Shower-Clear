@@ -1,6 +1,16 @@
 // ------------------------------------------------------------------
 // Code
 // ------------------------------------------------------------------
+// 1. Outer ............ Main <pre> container
+// 2. Inner ............ Generic <code> container
+//    - Marked Lines ... Statically highlighted lines
+//    - Line Numbers ... Generated line numbers
+// 3. Marked ........... Highlighted fragments
+//    - Important ...... Bold and inverted
+//    - Comment ........ Subtle and grey
+// ------------------------------------------------------------------
+
+// Outer
 
 pre {
 	margin:-4px 0 ($lineheight + 4px);
@@ -11,7 +21,10 @@ pre {
 
 	code {
 		display:block;
-		padding:0;
+		margin-left:-100px;
+		padding:0 0 0 100px;
+		width:calc(100% + 100px + 100px);
+		border-radius:0;
 		background:none;
 		line-height: $lineheight;
 		white-space:pre;
@@ -23,7 +36,11 @@ pre {
 			background:$color2;
 			color:#FFF;
 			}
+
+		// Comment
+
 		&.comment {
+			margin:0;
 			padding:0;
 			background:none;
 			color:#999;
