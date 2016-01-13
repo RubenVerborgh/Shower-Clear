@@ -3,8 +3,13 @@
 // ------------------------------------------------------------------
 
 a {
-	@include underline(currentColor, 0.09);
-	color:$color1;
+	color:inherit;
+	transition: color .2s, background .2s;
+	@include underline($grey, 0.09em);
+		&:hover {
+			color: $color2;
+			@include underline($color2, 0.09em);
+		}
 	}
 b, strong {
 	font-weight:bold;
