@@ -7,40 +7,20 @@
 // ------------------------------------------------------------------
 
 table {
+	margin: 0 0 1em $left;
 
-	margin-left:-100px;
-	margin-bottom:1em;
-	width:calc(100% + 100px + 100px);
-
-	tr:not(:last-of-type) {
-		> * {
-			@include underline($grey, 0.055);
-			}
+	thead {
+		tr > td, tr > th {
+			font-style: italic;
 		}
+	}
+
 	th {
 		text-align:left;
 		font-weight:bold;
 		}
 
-	// Lines
-
-	tr:not(:last-of-type) {
-		> * {
-			@include underline($grey, 0.055);
-			}
+	td, th {
+		padding: 0 $left 0 0;
 		}
-
-	// Stripes
-
-	&.striped {
-		tr {
-			&:nth-child(even) {
-				background:$grey;
-				}
-			> * {
-				background-image:none;
-				}
-			}
-		}
-
 	}
