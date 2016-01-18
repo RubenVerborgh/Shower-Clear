@@ -4,12 +4,6 @@
 
 a {
 	color:inherit;
-	transition: color .2s, background .2s;
-	@include underline(rgba($color1, 0.5), 0.09em);
-		&:hover {
-			color: $color2;
-			@include underline($color2, 0.09em);
-		}
 	}
 b, strong {
 	font-weight:bold;
