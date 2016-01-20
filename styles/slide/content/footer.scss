@@ -9,15 +9,9 @@ footer {
 	bottom:- $height;
 	left:0;
 	display:none;
-	padding:41px 100px 8px;
-	background:lighten($color3, 5%);
+	padding:41px 0 8px;
+	background:rgba(lighten($color1, 35%), .9);
 	transition:bottom 0.3s;
-
-	// Content
-
-	mark {
-		background:rgba(white, 0.8);
-		}
 
 	}
 
