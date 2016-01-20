@@ -12,6 +12,13 @@ footer {
 	padding:41px 0 8px;
 	background:rgba(lighten($color1, 35%), .9);
 	transition:bottom 0.3s;
+	* {
+		pointer-events: auto !important;
+	}
+
+	// Content
+	@import
+		'inline-full';
 
 	}
 
