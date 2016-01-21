@@ -9,7 +9,7 @@ footer {
 	bottom:- $height;
 	left:0;
 	display:none;
-	padding:41px 0 8px;
+	padding:41px $right 8px $left;
 	background:rgba(lighten($color1, 35%), .9);
 	transition:bottom 0.3s;
 	* {
@@ -17,6 +17,10 @@ footer {
 	}
 
 	// Content
+	> * {
+		margin-left: 0;
+	}
+
 	@import
 		'inline-full';
 
