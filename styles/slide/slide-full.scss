@@ -13,14 +13,12 @@
 	position:absolute;
 	top:0;
 	left:0;
-	margin-left:150%;
-	visibility:hidden;
+	display:none;
 
 	// Current
 
 	&:target {
-		margin:0;
-		visibility:visible;
+		display:block;
 		}
 
 	// Content
