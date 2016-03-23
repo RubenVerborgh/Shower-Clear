@@ -10,38 +10,49 @@ $headerlineheight:54px;
 // Open Sans
 @font-face {
 	font-family:'Open Sans';
-	src:url(../fonts/OpenSans.woff) format('woff');
+	src: local('Open Sans'),
+		url(../fonts/OpenSans.woff) format('woff');
 	}
 @font-face {
 	font-weight:bold;
 	font-family:'Open Sans';
-	src:url(../fonts/OpenSans.Bold.woff) format('woff');
+	src: local('Open Sans Bold'),
+		local('Open Sans'),
+		url(../fonts/OpenSans.Bold.woff) format('woff');
 	}
 @font-face {
 	font-style:italic;
 	font-family:'Open Sans';
-	src:url(../fonts/OpenSans.Italic.woff) format('woff');
+	src: local('Open Sans Italic'),
+		local('Open Sans'),
+		url(../fonts/OpenSans.Italic.woff) format('woff');
 	}
 @font-face {
 	font-style:italic;
 	font-weight:bold;
 	font-family:'Open Sans';
-	src:url(../fonts/OpenSans.Bold.Italic.woff) format('woff');
+	src: local('Open Sans Bold Italic'),
+		local('Open Sans'),
+		url(../fonts/OpenSans.Bold.Italic.woff) format('woff');
 	}
 @font-face {
 	font-weight:300;
 	font-family:'Open Sans';
-	src:url(../fonts/OpenSans.Light.woff) format('woff');
+	src: local('Open Sans Light'),
+		local('Open Sans'),
+		url(../fonts/OpenSans.Light.woff) format('woff');
 	}
 
 // Source Code Pro
 @font-face {
 	font-family:'Source Code Pro';
-	src:url(../fonts/SourceCodePro.woff) format('woff');
+	src: local('Source Code Pro'),
+		url(../fonts/SourceCodePro.woff) format('woff');
 	}
 @font-face {
 	font-weight:bold;
 	font-family:'Source Code Pro';
-	src:url(../fonts/SourceCodePro.Bold.woff) format('woff');
+	src: local('Source Code Pro Bold'),
+		local('Source Code Pro'),
+		url(../fonts/SourceCodePro.Bold.woff) format('woff');
 	}
-
