@@ -1,13 +1,11 @@
 // ------------------------------------------------------------------
-// White
+// Dark
 // ------------------------------------------------------------------
 
-&.white {
-
-	background-color:#FFF;
-
-	&:after {
-		visibility:hidden;
-		}
+&.dark {
+	background-color:$color1;
+	* {
+		color: white;
+	}
 
 	}
