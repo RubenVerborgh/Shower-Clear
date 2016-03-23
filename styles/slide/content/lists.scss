@@ -20,6 +20,18 @@ ol, ul {
 		font-weight: normal;
 		margin-bottom: 0;
 		}
+
+		// Inline lists
+		&.inline li {
+			margin-left: 0;
+			display: inline;
+			&:after {
+				content: ',';
+			}
+			&:last-child:after {
+				content: '';
+			}
+		}
 	}
 }
 
@@ -39,14 +51,26 @@ ol {
 	}
 
 	// Nested lists
-	ol > li:before {
-		content:counter(list, lower-alpha);
+	ol {
+		> li:before {
+			content:counter(list, lower-alpha);
+		}
+
+		// Inline lists
+		&.inline li {
+			&:after {
+				content: ' – ';
+			}
+			&:last-child:after, &:before {
+				content: '';
+			}
+		}
 	}
 }
 
 // Clearfix for floats inside of top-level lists
 > ul, > ol {
-	li {
+	> li {
 		clear: left;
 		&:after {
 			content: '';
