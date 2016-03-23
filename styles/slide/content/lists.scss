@@ -2,6 +2,8 @@
 // Lists
 // ------------------------------------------------------------------
 
+$smaller-fontsize: 7/8*$fontsize;
+
 ol, ul {
 	margin:0 0 0 $left;
 
@@ -14,7 +16,7 @@ ol, ul {
 	// Nested lists
 	ol, ul {
 		li {
-		font-size: 7/8*$fontsize;
+		font-size: $smaller-fontsize;
 		font-weight: normal;
 		margin-bottom: 0;
 		}
@@ -39,5 +41,62 @@ ol {
 	// Nested lists
 	ol > li:before {
 		content:counter(list, lower-alpha);
+	}
+}
+
+// Clearfix for floats inside of top-level lists
+> ul, > ol {
+	li {
+		clear: left;
+		&:after {
+			content: '';
+			display: table;
+			clear: both;
+		}
+	}
+}
+
+// Definition lists
+dl {
+  margin: 0 0 $lineheight $left;
+
+	dt {
+		float: left;
+		clear: left;
+		min-width: 160px;
+		font-weight: bold;
+		margin: $lineheight .5em 0 0;
+	}
+	dd {
+		margin: $lineheight 0 0 192px;
+	}
+	dt:first-of-type, dd:first-of-type, dd + dd {
+		margin-top: 0;
+	}
+}
+// Definition lists inside of lists
+li {
+	dl {
+		font-size: $smaller-fontsize;
+		font-weight: normal;
+
+		// display terms and their items inline
+		dt {
+			display: inline;
+			margin: 0;
+			min-width: 0;
+			font-weight: normal;
+			font-style: italic;
+			&:after {
+				content: ": ";
+			}
+		}
+		dd {
+			margin: 0;
+			float: left;
+			+ dd:before {
+				content: ', ';
+			}
+		}
 	}
 }
