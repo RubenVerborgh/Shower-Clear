@@ -15,6 +15,11 @@ h2 {
 	min-height: 2 * $headerlineheight;
 	color: $color1;
 	}
+h3 {
+  color: $color1;
+  font-weight: bold;
+  margin-bottom: $lineheight;
+}
 p {
 	margin: 0 0 $lineheight $left;
 	&.note {
