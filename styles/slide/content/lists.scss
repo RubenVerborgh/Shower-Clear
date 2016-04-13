@@ -4,6 +4,7 @@
 
 $smaller-fontsize: 7/8*$fontsize;
 
+// All lists
 ol, ul {
 	margin:0 0 0 $left;
 
@@ -16,26 +17,14 @@ ol, ul {
 	// Nested lists
 	ol, ul {
 		li {
-		font-size: $smaller-fontsize;
-		font-weight: normal;
-		margin-bottom: 0;
-		}
-
-		// Inline lists
-		&.inline li {
-			margin-left: 0;
-			display: inline;
-			&:after {
-				content: ',';
-			}
-			&:last-child:after {
-				content: '';
-			}
+			font-size: $smaller-fontsize;
+			font-weight: normal;
+			margin-bottom: 0;
 		}
 	}
 }
 
-// List item numbers
+// Numbered lists
 ol {
 	counter-reset:list;
 
@@ -55,16 +44,27 @@ ol {
 		> li:before {
 			content:counter(list, lower-alpha);
 		}
+	}
+}
 
-		// Inline lists
-		&.inline li {
-			&:after {
-				content: ' – ';
-			}
-			&:last-child:after, &:before {
-				content: '';
-			}
+// Inline lists
+li {
+	// Inline items and nested lists
+	ol, ul {
+		&.inline > li, ol.inline, ul.inline {
+			margin-left: 0;
+			display: inline;
 		}
+	}
+	// Use commas between unordered items
+	ul.inline > li {
+		&:after { content: ','; }
+		&:last-child:after { content: ''; }
+	}
+	// Use dashes between ordered items
+	ol.inline > li {
+		&:after { content: ' – '; }
+		&:before, &:last-child:after { content: ''; }
 	}
 }
 
