@@ -41,7 +41,14 @@ gulp.task('default', ['styles'], function() {
 gulp.task('styles', function () {
 	return gulp.src('styles/screen-*.scss')
 		.pipe(sass().on('error', sass.logError))
-		.pipe(autoprefixer())
+		.pipe(autoprefixer({
+				browsers: [
+					'> 1%',
+					'last 2 versions',
+					'Firefox ESR',
+					'iOS >= 8',
+				]
+			}))
 		.pipe(minify())
 		.pipe(header(banner, { pkg: pkg }))
 		.pipe(gulp.dest('styles'))
