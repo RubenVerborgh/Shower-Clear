@@ -124,3 +124,12 @@ li {
 		}
 	}
 }
+
+// Custom
+
+ol > li[value]::before {
+	content:attr(value)'.';
+	}
+ul > li[value]::before {
+	content:attr(value);
+	}

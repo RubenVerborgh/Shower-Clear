@@ -28,7 +28,7 @@
 
 	// Shadow
 
-	&:target {
+	&.active {
 		box-shadow:  6px  6px 0 $color1,
 		            -6px  6px 0 $color1,
 								 6px -6px 0 $color1,
