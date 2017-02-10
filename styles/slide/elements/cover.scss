@@ -2,7 +2,9 @@
 // Cover
 // ------------------------------------------------------------------
 
-.cover:not(figure), figure.cover > :first-child {
+.cover:not(figure),
+figure.cover >  :first-child,
+figure.cover > a:first-child img {
 	position:absolute;
 	top:50%;
 	left:50%;
@@ -14,12 +16,14 @@
 
 // Fitting
 .cover:not(figure).width, .cover:not(figure).w,
-figure.cover.width > :first-child, figure.cover.w > :first-child {
+figure.cover.width >  :first-child,     figure.cover.w >  :first-child,
+figure.cover.width > a:first-child img, figure.cover.w > a:first-child img {
 	width:100%;
 	max-height:none;
 }
 .cover:not(figure).height, .cover:not(figure).h,
-figure.cover.height > :first-child, figure.cover.h > :first-child {
+figure.cover.height >  :first-child,     figure.cover.h >  :first-child,
+figure.cover.height > a:first-child img, figure.cover.h > a:first-child img {
 	height:100%;
 	max-width:none;
 }
