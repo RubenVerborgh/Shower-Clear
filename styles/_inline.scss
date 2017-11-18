@@ -9,7 +9,7 @@ b, strong {
 	font-weight:bold;
 	color: $color2;
 	}
-i, em, dfn {
+i, em, dfn, var {
 	font-style:italic;
 	}
 kbd, code, samp {
@@ -18,9 +18,6 @@ kbd, code, samp {
 	}
 mark {
 	background:$color3;
-	}
-	var {
-	font-style: italic;
 	}
 sub, sup {
 	position: relative;
