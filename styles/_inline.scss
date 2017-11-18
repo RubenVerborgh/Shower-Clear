@@ -30,3 +30,11 @@ sub {
 sup {
 	top:-0.5em;
 	}
+q {
+	&:before {
+		content:"“";
+	}
+	&:after {
+		content:"”";
+	}
+}
