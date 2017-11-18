@@ -17,14 +17,12 @@ $headerlineheight:54px;
 	font-weight:bold;
 	font-family:'Open Sans';
 	src: local('Open Sans Bold'),
-		local('Open Sans'),
 		url(../fonts/OpenSans.Bold.woff) format('woff');
 	}
 @font-face {
 	font-style:italic;
 	font-family:'Open Sans';
 	src: local('Open Sans Italic'),
-		local('Open Sans'),
 		url(../fonts/OpenSans.Italic.woff) format('woff');
 	}
 @font-face {
@@ -32,14 +30,12 @@ $headerlineheight:54px;
 	font-weight:bold;
 	font-family:'Open Sans';
 	src: local('Open Sans Bold Italic'),
-		local('Open Sans'),
 		url(../fonts/OpenSans.Bold.Italic.woff) format('woff');
 	}
 @font-face {
 	font-weight:300;
 	font-family:'Open Sans';
 	src: local('Open Sans Light'),
-		local('Open Sans'),
 		url(../fonts/OpenSans.Light.woff) format('woff');
 	}
 
